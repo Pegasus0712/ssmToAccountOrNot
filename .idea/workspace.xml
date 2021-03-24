@@ -14,30 +14,18 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f5dfd51-8df1-48d5-bced-dcf529d517d5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ssmBillBook_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ssmBillBook_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ssmBillBook_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ssmBillBook_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/bean/Accounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/bean/MonthAccountsListBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/controller/AccountsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/dao/AccountsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/service/AccountsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AccountsMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dbconfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dbconfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssmBillBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ssmBillBook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/copasso/billbook/bean/BBill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/copasso/billbook/bean/BBill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssmBillBook/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssmBillBook/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +37,7 @@
       <list>
         <option value="package-info" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -178,7 +167,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -191,11 +180,11 @@
       <recent name="com.copasso.billbook.test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gitcode\softwareB\ssmBillBook\src\main\resources\mapper" />
       <recent name="C:\Users\zhouas666\Documents\IntelliJ\IDEA\ssmBillBook\src\main\webapp\upload" />
       <recent name="C:\Users\zhouas666\Documents\IntelliJ\IDEA\ssmBillBook\src\main\webapp" />
       <recent name="C:\Users\zhouas666\Documents\IntelliJ\IDEA\ssmBillBook\target\ssmBillBook\upload" />
       <recent name="C:\Users\zhouas666\Documents\IntelliJ\IDEA\bak\ssmBillBook\src\main\resources\mapper" />
-      <recent name="C:\Users\zhouas666\Documents\IntelliJ\IDEA\bak\ssmBillBook\src\main\java\com\copasso" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.SSM">
@@ -432,10 +421,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="33" y="182" key="#SQL_Dialects" timestamp="1616552598338">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="33" y="182" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1616552598338" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616499729303">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1616499729303" />
+    <state x="738" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1616512215438">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="738" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1616512215438" />
     <state width="988" height="225" key="GridCell.Tab.0.bottom" timestamp="1616499393658">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
