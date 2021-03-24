@@ -9,6 +9,9 @@ public interface AccountsMapper {
     String getMonthOutcomeByUserIdWithYearMonth(Long uid, String date_year, String date_month);
     List<String> selectAccountsDateByUserIdWithYearMonth(Long uid, String date_year, String date_month);
     List<Accounts> selectAccountsByUserIdWithDate(Long uid, String date);
-    String getDayIncomeByUserIdWithDate(Long userid, String date);
-    String getDayOutcomeByUserIdWithDate(Long userid, String date);
+    String getDayIncomeByUserIdWithDate(Long uid, String date);
+    String getDayOutcomeByUserIdWithDate(Long uid, String date);
+
+    int deleteAccountsByCard(Long uid, String card);
+
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.copasso.billbook.dao.AccountsMapper">
-  <resultMap id="BaseResultMap" type="com.copasso.billbook.bean.Accounts">
+<mapper namespace="com.copasso.billbook.dao.CardsMapper">
+  <resultMap id="BaseResultMap" type="com.copasso.billbook.bean.Cards">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="first" jdbcType="VARCHAR" property="first" />
     <result column="second" jdbcType="VARCHAR" property="second" />
