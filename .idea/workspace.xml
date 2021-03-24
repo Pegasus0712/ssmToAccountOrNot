@@ -19,13 +19,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f5dfd51-8df1-48d5-bced-dcf529d517d5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/bean/Accounts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/bean/MonthAccountsListBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/controller/AccountsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/dao/AccountsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/service/AccountsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/AccountsMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/controller/AccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/dao/AccountsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/dao/AccountsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/service/AccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/copasso/billbook/service/AccountsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

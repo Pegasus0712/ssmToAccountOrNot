@@ -3,7 +3,6 @@ package com.copasso.billbook.controller;
 import com.copasso.billbook.bean.Accounts;
 import com.copasso.billbook.bean.MonthAccountsListBean;
 import com.copasso.billbook.service.AccountsService;
-import com.copasso.billbook.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,15 +18,25 @@ public class AccountsController {
     @Autowired
     private AccountsService accountsService;
 
-    @RequestMapping("user/{id}/{yy}/{mm}")
+    @RequestMapping("user/{uid}/{yy}/{mm}")
     @ResponseBody
-    public MonthAccountsListBean findDetailByUserIdWithYearMonth(@PathVariable("id") Integer id,
-                                                                 @PathVariable("yy") String year,
-                                                                 @PathVariable("mm") String month) {
+    public MonthAccountsListBean findDetailByUserIdWithYearMonth(@PathVariable("uid") Long uid,
+                                                                 @PathVariable("yy") String date_year,
+                                                                 @PathVariable("mm") String date_month) {
         MonthAccountsListBean monthAccountsListBean = new MonthAccountsListBean();
         List<MonthAccountsListBean.DayAccountsList> dayList = new ArrayList<>();
 
-
+        monthAccountsListBean.setMonth_income(accountsService.getMonthIncomeByUserIdWithYearMonth(uid, date_year, date_month));
+        monthAccountsListBean.setMonth_outcome(accountsService.getMonthOutcomeByUserIdWithYearMonth(uid, date_year, date_month));
+        List<String> dateList = accountsService.selectAccountsDateByUserIdWithYearMonth(uid, date_year, date_month);
+        for (String date : dateList) {
+            List<Accounts> list = accountsService.selectAccountsByUserIdWithDate(uid, date);
+            MonthAccountsListBean.DayAccountsList dayAccountsList = new MonthAccountsListBean.DayAccountsList();
+            dayAccountsList.setList(list);
+            dayAccountsList.setDay_income(accountsService.getDayIncomeByUserIdWithDate(uid, date));
+            dayAccountsList.setDay_outcome(accountsService.getDayOutcomeByUserIdWithDate(uid, date));
+            dayList.add(dayAccountsList);
+        }
 
         monthAccountsListBean.setSuccess();
         if (dayList.size() == 0) monthAccountsListBean.setFail();
