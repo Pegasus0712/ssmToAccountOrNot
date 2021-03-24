@@ -34,7 +34,7 @@
     select
       `date`
     from accounts
-    where uid = #{arg0} and date_year = #{arg1} and date_month = #{arg2} group by `date` order by `date` desc
+    where uid = #{arg0} and date_year = #{arg1} and date_month = #{arg2} group by `date` order by date desc
   </select>
 
   <select id="selectAccountsByUserIdWithDate" resultMap="BaseResultMap">

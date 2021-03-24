@@ -30,11 +30,13 @@ public class AccountsController {
         monthAccountsListBean.setMonth_outcome(accountsService.getMonthOutcomeByUserIdWithYearMonth(uid, date_year, date_month));
         List<String> dateList = accountsService.selectAccountsDateByUserIdWithYearMonth(uid, date_year, date_month);
         for (String date : dateList) {
-            List<Accounts> list = accountsService.selectAccountsByUserIdWithDate(uid, date);
             MonthAccountsListBean.DayAccountsList dayAccountsList = new MonthAccountsListBean.DayAccountsList();
-            dayAccountsList.setList(list);
+            dayAccountsList.setDate(date);
             dayAccountsList.setDay_income(accountsService.getDayIncomeByUserIdWithDate(uid, date));
             dayAccountsList.setDay_outcome(accountsService.getDayOutcomeByUserIdWithDate(uid, date));
+            List<Accounts> list = accountsService.selectAccountsByUserIdWithDate(uid, date);
+            dayAccountsList.setList(list);
+
             dayList.add(dayAccountsList);
         }
 
